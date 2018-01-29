@@ -1,7 +1,7 @@
 ﻿using Fclp;
 using System;
 
-namespace BankAccountCLI
+namespace BankAccountCli
 {
     public class Program
     {
@@ -28,7 +28,7 @@ namespace BankAccountCLI
             ApplicationArguments arguments = parser.Object;
 
             // Validate exclusive options.
-            if(arguments.IsCredit && arguments.IsDebit)
+            if (arguments.IsCredit && arguments.IsDebit)
             {
                 throw new ArgumentException("Credit and Debit arguments cannot be passed together.");
             }

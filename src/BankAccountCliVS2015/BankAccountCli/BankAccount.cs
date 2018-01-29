@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BankAccountCLI
+namespace BankAccountCli
 {
     /// <summary>   
     /// Bank Account demo class.   
