@@ -230,6 +230,8 @@ Neste repositório os projetos da solução BankAccountCliVS2017 são compatíve
 
 ## Instalando dependências com dotnet CLI
 
+É importante notar que no novo modelo de `.csproj` as dependências ficam declaradas no próprio arquivo de projeto, ao invés de no arquivo de configuração `packages.config`, como era na versão anterior.
+
 Para instalar as dependências NuGet com a nova CLI basta apenas estar no diretório da solução ou projeto e executar o seguinte comando:
 
 ```powershell
