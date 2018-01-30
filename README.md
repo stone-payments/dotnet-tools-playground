@@ -3,6 +3,8 @@
 Um repositório para aprender sobre as ferramentas de build e teste para ecossistema dotnet.  
 Este repositório contém duas aplicações idênticas, uma com modelo de projeto novo suportado a partir do Visual Studio 2017 e outro com o modelo suportado até o Visual Studio 2015.
 
+# Sumário
+
   * [Sobre o projeto BankAccountCli](#sobre-o-projeto-bankaccountcli)
   * [Pré-requisitos](#pr--requisitos)
   * [Anatomia projeto dotnet](#anatomia-projeto-dotnet)
