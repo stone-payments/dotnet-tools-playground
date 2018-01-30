@@ -3,6 +3,26 @@
 Um repositório para aprender sobre as ferramentas de build e teste para ecossistema dotnet.  
 Este repositório contém duas aplicações idênticas, uma com modelo de projeto novo suportado a partir do Visual Studio 2017 e outro com o modelo suportado até o Visual Studio 2015.
 
+  * [Sobre o projeto BankAccountCli](#sobre-o-projeto-bankaccountcli)
+  * [Pré-requisitos](#pr--requisitos)
+  * [Anatomia projeto dotnet](#anatomia-projeto-dotnet)
+  * [Baixando dependencias com NuGet](#baixando-dependencias-com-nuget)
+  * [Compilando com o MSBuild](#compilando-com-o-msbuild)
+    + [Configurando MSBuild](#configurando-msbuild)
+    + [Compilando projetos da solução](#compilando-projetos-da-solu--o)
+    + [Debug x Release](#debug-x-release)
+    + [Outros usos do MSBuild](#outros-usos-do-msbuild)
+  * [Testando com vstest](#testando-com-vstest)
+  * [Cobertura de testes com OpenCover](#cobertura-de-testes-com-opencover)
+  * [Melhorando o output do OpenCover com o ReportGenerator](#melhorando-o-output-do-opencover-com-o-reportgenerator)
+- [Utilizando dotnet CLI](#utilizando-dotnet-cli)
+  * [Instalando dependências com dotnet CLI](#instalando-depend-ncias-com-dotnet-cli)
+  * [Compilando com dotnet CLI](#compilando-com-dotnet-cli)
+  * [Testando o projeto com dotnet CLI](#testando-o-projeto-com-dotnet-cli)
+  * [Executando o projeto com dotnet CLI](#executando-o-projeto-com-dotnet-cli)
+  * [Publicando o projeto com dotnet CLI](#publicando-o-projeto-com-dotnet-cli)
+- [Contribuindo](#contribuindo)
+
 ## Sobre o projeto BankAccountCli
 
 Este é um projeto de exemplo que simula operações de crédito e débito em uma conta corrente. Depois de [compilado](#compilando-com-o-msbuild) você pode executar o projeto com a linha de comando abaixo.
