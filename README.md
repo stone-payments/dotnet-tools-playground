@@ -83,7 +83,7 @@ O utilitário de linha de comando *msbuild.exe* recebe como parâmetro um arquiv
 
 ### Configurando MSBuild
 
-Para adicionar o executável do msbuild ao PATH, de modo que fique fácil de executá-lo, você pode executar o comando abaixo em seu powershell **em modo administrativo**,
+Para adicionar o executável do msbuild ao PATH, de modo que fique fácil de executá-lo, você pode executar o comando abaixo em seu powershell **em modo administrativo**:
 
 ``` powershell
 $getmsbuild = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0' -Name MSBuildToolsPath).MSBuildToolsPath
