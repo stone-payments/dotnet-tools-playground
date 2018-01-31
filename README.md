@@ -83,16 +83,17 @@ O utilitário de linha de comando *msbuild.exe* recebe como parâmetro um arquiv
 
 ### Configurando MSBuild
 
-Para localizar o executável do msbuild você deve executar o seguinte comando:
+Para adicionar o executável do msbuild ao PATH, de modo que fique fácil de executá-lo, você pode executar o comando abaixo em seu powershell **em modo administrativo**,
 
 ``` powershell
-reg.exe query "HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0" /v MSBuildToolsPath
+$getmsbuild = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0' -Name MSBuildToolsPath).MSBuildToolsPath
+[Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";$getmsbuild", [System.EnvironmentVariableTarget]::User)
 ```
 
-Você pode adicionar esse diretório ao PATH com o comando abaixo para facilitar a utilização os comandos do msbuild. Deve executado em um terminal powershell como administrador.
+Agora reinicei seu powershell e você deverá conseguir chamar o comando `msbuild`:
 
-``` powershell
-[Environment]::SetEnvironmentVariable("PATH", $env:PATH + "<saída do comando anterior>", [System.EnvironmentVariableTarget]::User)
+```powershell
+msbuild
 ```
 
 ### Compilando projetos da solução
